@@ -1,0 +1,15 @@
+h1{
+	text-transform: uppercase;
+	color: red;
+}
+
+small{
+	/*color: red; key word*/
+	/*color: #ff0000; Hex code*/
+	/*color: #f00; Short Hex code*/
+	color: rgb(155, 26, 26);
+	word-spacing: 20px;
+	letter-spacing: 5px;
+	font-size: 20px;
+}
+

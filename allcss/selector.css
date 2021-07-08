@@ -1,0 +1,35 @@
+/*universal selector*/
+*{
+	margin: 0px;
+	padding: 0px;
+	color: red;
+}
+
+/*Tag selector or Element selector*/
+h2{
+	font-size: 30px;
+}
+
+p{
+	font-size: 20px;
+	/*text-decoration: underline;*/
+}
+
+/*Attribute selector*/
+a[target="_blank"]{
+	color: orange;
+	text-decoration: none;
+}
+
+/*ID selector*/
+#idsele{
+	color: brown;
+	text-indent: 50px;
+}
+
+/*CLass selector*/
+.classtor{
+	color: pink;
+	font-size: 15px;
+	word-spacing: 20px;
+}
