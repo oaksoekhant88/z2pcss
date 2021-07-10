@@ -33,3 +33,99 @@ a[target="_blank"]{
 	font-size: 15px;
 	word-spacing: 20px;
 }
+
+h1{
+	text-align: center;
+}
+
+/*Descedent Selector*/
+.desc a{
+	color: purple;
+	text-decoration: none;
+}
+
+/*Child Selector*/
+.child > a{
+	color: green;
+}
+
+/*Pesudo Selector*/
+a:link{
+	color: gold;
+}
+a:hover{
+	color: lavender;
+}
+a:active{
+	color: darkgreen;
+}
+a:visited{
+	color: blueviolet;
+}
+
+/*Target Selector*/
+:target{
+	color: blue;
+	border: 1px solid green;
+}
+
+/*Register Form*/
+form{
+	width: 80%;
+	margin: auto;
+}
+
+input[type="text"], input[type="number"], textarea{
+	color: white;
+}
+
+input[type="text"], input[type="number"]{
+	width: 100%;
+	border: 2px solid #8c968f;
+	background-color: #7fb38d;
+	outline: none;
+	height: 40px;
+}
+
+input[type="text"]:focus, input[type="number"]:focus{
+	border: 3px solid blue;
+}
+
+div#dob_birth{
+	width: 99%;
+	background-color: #EEE;
+	border-radius: 10px;
+	outline: none;
+	padding: 7px;
+}
+
+div#dob_birth select{
+	width: 33%;
+	padding: 5px;
+}
+
+input[type="radio"]:checked+label{
+	color: #66f266;
+	font-weight: bold;
+}
+
+textarea#address{
+	width: 100%;
+	height: 100px;
+	border: 2px solid #ccc;
+	border-radius: 8px;
+	outline: none;
+	background-color: #7fb38d;
+}
+
+input[type="checkbox"]:enabled+label{
+	color: #a6a813;
+	font-style: italic;
+}
+input[type="checkbox"]:checked+label{
+	color: #f00;
+	font-style: normal;	
+}
+input[type="checkbox"]:disabled+label{
+	color: #c4c4ad;
+}
