@@ -1,6 +1,7 @@
 h1{
 	text-transform: uppercase;
 	color: red;
+	text-align: center;
 }
 
 small{
@@ -12,4 +13,134 @@ small{
 	letter-spacing: 5px;
 	font-size: 20px;
 }
+
+
+/*layout*/
+
+p.block1, p.block2{
+	border: 2px solid black;
+	width: 400px;
+}
+
+a.inline_block1, a.inline_block2, a.inline_block3{
+	border: 2px solid black;
+	display: inline-block;
+	width: 600px;
+}
+
+
+/*Float*/
+
+div.float_left img{
+	width: 50%;
+	height: 200px;
+	float: left;
+}
+
+.clear{
+	clear: both;
+}
+
+div.float_right img{
+	width: 50%;
+	height: 200px;
+	float: right;
+}
+
+
+/*Grid*/
+
+.grid1, .grid2, .grid3, .grid4, .grid5, .grid6{
+	display: grid;
+	grid-template-columns: 600px auto auto;
+}
+
+.grid1 div, .grid2 div, .grid3 div, .grid4 div, .grid5 div, .grid6 div{
+	border: 1px solid #fff;
+	padding: 20px;
+	font-size: 20px;
+	text-align: center;
+	color: #fff;
+}
+
+.grid2{
+	grid-column-gap: 50px;
+	/*colums spacing*/
+}
+
+.grid3{
+	grid-row-gap: 20px;
+	/*row spacing*/
+}
+
+.grid4{
+	grid-gap: 40px;
+	/*rows and column spacing*/
+}
+
+.grid5 .one{
+	grid-column-start: 1;
+	grid-column-end: 3;
+}	
+
+.grid6 .two{
+	grid-row-start: 1;
+	grid-row-end: 3;
+}
+
+/*Position*/
+
+.relative_paraent{
+	width: 1000px;
+	height: 500px;
+	border: 1px solid red;
+}
+
+.relative{
+	position: relative;
+	top: 50px;
+	left: 200px;
+	width: 300px;
+	height: 100px;
+	border: 1px solid green;
+}
+
+.absolute_parent{
+	position: relative;
+	width: 1000px;
+	height: 500px;
+	border: 1px solid black;
+}
+
+.absolute{
+	position: absolute;
+	top: 100px;
+	left: 200px;
+	border: 1px dotted gold;
+	width: 400px;
+	height: 200px;
+}
+
+.fixed{
+	position: fixed;
+	top: 40px;
+	left: 800px;
+}
+
+/*font*/
+/*offline font*/
+@font-face{
+	src: url(../Cinzel/Cinzel-VariableFont_wght.ttf);
+	font-family: a;
+}
+
+.offlinefont{
+	font-family: a;
+}
+
+/*online font*/
+.onlinefont{
+	font-family: 'Lobster', cursive;
+}
+
 
